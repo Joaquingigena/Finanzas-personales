@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    internal class Cuenta
+    public class Cuenta
     {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public decimal Saldo { get; set; }
+        public int TipoCuenta { get; set; }
     }
 }
