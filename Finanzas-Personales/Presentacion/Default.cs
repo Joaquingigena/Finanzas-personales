@@ -16,5 +16,11 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        private void btnAgregarMovimento_Click(object sender, EventArgs e)
+        {
+            frmAgregarMovimiento ventana= new frmAgregarMovimiento();
+            ventana.ShowDialog();
+        }
     }
 }

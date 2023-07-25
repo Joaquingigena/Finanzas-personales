@@ -90,6 +90,7 @@
             this.btnAgregarMovimento.Text = "Agregar Movimiento";
             this.btnAgregarMovimento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarMovimento.UseVisualStyleBackColor = true;
+            this.btnAgregarMovimento.Click += new System.EventHandler(this.btnAgregarMovimento_Click);
             // 
             // panelApp
             // 
