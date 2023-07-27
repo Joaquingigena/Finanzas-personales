@@ -11,6 +11,7 @@ namespace Dominio
     {
 
         public int Id { get; set; }
+        public Cuenta Cuenta { get; set; }
         public Tipo Tipo { get; set; }
         public Categoria Categoria { get; set; }
         public DateTime Fecha { get; set; }

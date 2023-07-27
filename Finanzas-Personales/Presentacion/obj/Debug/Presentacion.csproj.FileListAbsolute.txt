@@ -10,3 +10,8 @@ C:\Users\joaquin gigena\OneDrive\Documentos\Finanzas\Finanzas-personales\Finanza
 C:\Users\joaquin gigena\OneDrive\Documentos\Finanzas\Finanzas-personales\Finanzas-Personales\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\joaquin gigena\OneDrive\Documentos\Finanzas\Finanzas-personales\Finanzas-Personales\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\joaquin gigena\OneDrive\Documentos\Finanzas\Finanzas-personales\Finanzas-Personales\Presentacion\obj\Debug\Presentacion.frmAgregarMovimiento.resources
+C:\Users\joaquin gigena\OneDrive\Documentos\Finanzas\Finanzas-personales\Finanzas-Personales\Presentacion\bin\Debug\Dominio.dll
+C:\Users\joaquin gigena\OneDrive\Documentos\Finanzas\Finanzas-personales\Finanzas-Personales\Presentacion\bin\Debug\Negocio.dll
+C:\Users\joaquin gigena\OneDrive\Documentos\Finanzas\Finanzas-personales\Finanzas-Personales\Presentacion\bin\Debug\Dominio.pdb
+C:\Users\joaquin gigena\OneDrive\Documentos\Finanzas\Finanzas-personales\Finanzas-Personales\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\joaquin gigena\OneDrive\Documentos\Finanzas\Finanzas-personales\Finanzas-Personales\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
