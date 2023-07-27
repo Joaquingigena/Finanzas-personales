@@ -10,10 +10,10 @@ namespace Negocio
     public class CategoriaNegocio
     {
 
-        public List<Categoria> listar()
-        {
-			AccesoDatos datos= new AccesoDatos();
-			List<Categoria> lista=new List<Categoria>();
+		public List<Categoria> listar()
+		{
+			AccesoDatos datos = new AccesoDatos();
+			List<Categoria> lista = new List<Categoria>();
 
 			try
 			{
@@ -29,7 +29,7 @@ namespace Negocio
 					categoria.TipoMovimiento = (string)datos.Lector["TipoMovimiento"];
 
 					lista.Add(categoria);
- 				}
+				}
 
 				return lista;
 			}
@@ -38,7 +38,7 @@ namespace Negocio
 
 				throw;
 			}
-        }
-
+			finally { datos.cerrarConexion(); }
+		}
     }
 }

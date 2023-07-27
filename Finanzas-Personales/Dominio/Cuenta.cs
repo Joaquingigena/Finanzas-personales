@@ -12,5 +12,10 @@ namespace Dominio
         public string Nombre { get; set; }
         public decimal Saldo { get; set; }
         public TipoDeCuenta TipoCuenta { get; set; }
+
+        public override string ToString()
+        {
+            return Nombre;
+        }
     }
 }

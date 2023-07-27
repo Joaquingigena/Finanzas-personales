@@ -23,8 +23,11 @@ namespace Presentacion
         }
         private void frmAgregarMovimiento_Load(object sender, EventArgs e)
         {
-            CategoriaNegocio negocio=new CategoriaNegocio();
-            cboCategoria.DataSource = negocio.listar();
+            CategoriaNegocio negocioCategoria=new CategoriaNegocio();
+            CuentaNegocio negocioCuenta =new CuentaNegocio();
+
+            cboCategoria.DataSource = negocioCategoria.listar();
+            cboCuenta.DataSource = negocioCuenta.listar();
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
