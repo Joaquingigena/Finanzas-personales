@@ -15,10 +15,17 @@ namespace Negocio
 			try
 			{
 				datos.setearConsulta("insert into Movimiento values(@Tipo,@Fecha,@Descripcion,@Categoria,@Monto,1)");
-				datos.setearParametro("@Tipo",nuevo.Tipo);
+				datos.setearParametro("@Tipo",nuevo.Tipo.Id);
+				datos.setearParametro("@Fecha",nuevo.Fecha);
+                datos.setearParametro("@Descripcion",nuevo.Descripcion);
+                datos.setearParametro("@Categoria",nuevo.Categoria.Id);
+                datos.setearParametro("@Monto",nuevo.Monto);
+
+                datos.ejecutarAccion();
 
 
-			}
+
+            }
 			catch (Exception ex)
 			{
 
