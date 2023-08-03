@@ -37,9 +37,12 @@ namespace Negocio
         public decimal saldoTotal()
         {
 			AccesoDatos datos = new AccesoDatos();
-			decimal saldo=1;
+			decimal saldo;
 			try
 			{
+				datos.setearProcedimiento("SP_SaldoTotal");
+
+				saldo = datos.ejecutarAccionScalar();
 
 				return saldo;
 			}

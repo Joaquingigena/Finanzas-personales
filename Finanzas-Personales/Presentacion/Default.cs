@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,9 @@ namespace Presentacion
       
         private void Default_Load(object sender, EventArgs e)
         {
+            MovimientoNegocio negocio= new MovimientoNegocio();
 
+            txtSaldoTotal.Text = negocio.saldoTotal().ToString();
 
         }
     }

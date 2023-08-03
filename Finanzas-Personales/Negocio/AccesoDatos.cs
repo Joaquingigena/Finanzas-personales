@@ -76,5 +76,25 @@ namespace Negocio
             comando.Parameters.AddWithValue(nombre, valor);
         }
 
+        public void setearProcedimiento(string procedimiento)
+        {
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.CommandText = procedimiento;
+        }
+
+        public decimal ejecutarAccionScalar()
+        {
+            comando.Connection = conexion;
+            try
+            {
+                conexion.Open();
+                return decimal.Parse(comando.ExecuteScalar().ToString());
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }
