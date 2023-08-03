@@ -22,5 +22,12 @@ namespace Presentacion
             frmAgregarMovimiento ventana= new frmAgregarMovimiento();
             ventana.ShowDialog();
         }
+
+      
+        private void Default_Load(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }

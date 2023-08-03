@@ -65,3 +65,21 @@ insert into Categoria values('Alimentos','Gasto')
 insert into Categoria values('Entretenimiento','Gasto')
 insert into Categoria values('Educacion','Gasto')
 insert into Categoria values('Otros','Gasto')
+
+
+--Creo procedimiento para calcular el saldo total ( ingresos - gastos)
+create procedure SP_SaldoTotal
+as
+begin
+	declare @saldoTotal money
+	declare @Ingresos money
+	declare @Gastos money
+
+	select @Ingresos = sum(Monto) from Movimiento where Tipo=1
+	select @Gastos= sum(Monto) from Movimiento where Tipo=2
+
+	set @saldoTotal= @Ingresos-@Gastos
+
+	select @saldoTotal
+
+end

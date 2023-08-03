@@ -29,24 +29,22 @@
         private void InitializeComponent()
         {
             this.panelMenuLateral = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnAgregarMovimento = new System.Windows.Forms.Button();
-            this.panelApp = new System.Windows.Forms.Panel();
-            this.btnInformes = new System.Windows.Forms.Button();
-            this.btnCategorias = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.lblSaldoTotal = new System.Windows.Forms.Label();
-            this.lblSaldo = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.btnCategorias = new System.Windows.Forms.Button();
+            this.btnInformes = new System.Windows.Forms.Button();
+            this.btnAgregarMovimento = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelApp = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblSaldo = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSaldoTotal = new System.Windows.Forms.Label();
+            this.txtSaldoTotal = new System.Windows.Forms.TextBox();
             this.panelMenuLateral.SuspendLayout();
             this.panelApp.SuspendLayout();
             this.SuspendLayout();
@@ -65,13 +63,59 @@
             this.panelMenuLateral.Size = new System.Drawing.Size(200, 450);
             this.panelMenuLateral.TabIndex = 0;
             // 
-            // panelLogo
+            // btnSalir
             // 
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(200, 94);
-            this.panelLogo.TabIndex = 0;
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSalir.Location = new System.Drawing.Point(0, 376);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnSalir.Size = new System.Drawing.Size(200, 74);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            // 
+            // btnCategorias
+            // 
+            this.btnCategorias.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCategorias.FlatAppearance.BorderSize = 0;
+            this.btnCategorias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnCategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategorias.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategorias.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCategorias.Location = new System.Drawing.Point(0, 242);
+            this.btnCategorias.Name = "btnCategorias";
+            this.btnCategorias.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnCategorias.Size = new System.Drawing.Size(200, 74);
+            this.btnCategorias.TabIndex = 3;
+            this.btnCategorias.Text = "Categorias";
+            this.btnCategorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategorias.UseVisualStyleBackColor = true;
+            // 
+            // btnInformes
+            // 
+            this.btnInformes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInformes.FlatAppearance.BorderSize = 0;
+            this.btnInformes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnInformes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInformes.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold);
+            this.btnInformes.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnInformes.Location = new System.Drawing.Point(0, 168);
+            this.btnInformes.Name = "btnInformes";
+            this.btnInformes.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnInformes.Size = new System.Drawing.Size(200, 74);
+            this.btnInformes.TabIndex = 2;
+            this.btnInformes.Text = "Informes";
+            this.btnInformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInformes.UseVisualStyleBackColor = true;
             // 
             // btnAgregarMovimento
             // 
@@ -92,15 +136,21 @@
             this.btnAgregarMovimento.UseVisualStyleBackColor = true;
             this.btnAgregarMovimento.Click += new System.EventHandler(this.btnAgregarMovimento_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(200, 94);
+            this.panelLogo.TabIndex = 0;
+            // 
             // panelApp
             // 
             this.panelApp.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panelApp.Controls.Add(this.txtSaldoTotal);
             this.panelApp.Controls.Add(this.label9);
             this.panelApp.Controls.Add(this.label10);
-            this.panelApp.Controls.Add(this.label8);
             this.panelApp.Controls.Add(this.label7);
-            this.panelApp.Controls.Add(this.label6);
-            this.panelApp.Controls.Add(this.label4);
             this.panelApp.Controls.Add(this.label5);
             this.panelApp.Controls.Add(this.lblSaldo);
             this.panelApp.Controls.Add(this.label3);
@@ -113,165 +163,7 @@
             this.panelApp.Name = "panelApp";
             this.panelApp.Size = new System.Drawing.Size(600, 450);
             this.panelApp.TabIndex = 1;
-            // 
-            // btnInformes
-            // 
-            this.btnInformes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInformes.FlatAppearance.BorderSize = 0;
-            this.btnInformes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.btnInformes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInformes.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold);
-            this.btnInformes.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnInformes.Location = new System.Drawing.Point(0, 168);
-            this.btnInformes.Name = "btnInformes";
-            this.btnInformes.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnInformes.Size = new System.Drawing.Size(200, 74);
-            this.btnInformes.TabIndex = 2;
-            this.btnInformes.Text = "Informes";
-            this.btnInformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInformes.UseVisualStyleBackColor = true;
-            // 
-            // btnCategorias
-            // 
-            this.btnCategorias.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCategorias.FlatAppearance.BorderSize = 0;
-            this.btnCategorias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.btnCategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategorias.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategorias.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCategorias.Location = new System.Drawing.Point(0, 242);
-            this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnCategorias.Size = new System.Drawing.Size(200, 74);
-            this.btnCategorias.TabIndex = 3;
-            this.btnCategorias.Text = "Categorias";
-            this.btnCategorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCategorias.UseVisualStyleBackColor = true;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSalir.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSalir.Location = new System.Drawing.Point(0, 376);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnSalir.Size = new System.Drawing.Size(200, 74);
-            this.btnSalir.TabIndex = 4;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            // 
-            // lblSaldoTotal
-            // 
-            this.lblSaldoTotal.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaldoTotal.Location = new System.Drawing.Point(172, 39);
-            this.lblSaldoTotal.Name = "lblSaldoTotal";
-            this.lblSaldoTotal.Size = new System.Drawing.Size(178, 55);
-            this.lblSaldoTotal.TabIndex = 0;
-            this.lblSaldoTotal.Text = "Saldo total";
-            this.lblSaldoTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSaldo
-            // 
-            this.lblSaldo.AutoSize = true;
-            this.lblSaldo.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaldo.Location = new System.Drawing.Point(235, 110);
-            this.lblSaldo.Name = "lblSaldo";
-            this.lblSaldo.Size = new System.Drawing.Size(45, 19);
-            this.lblSaldo.TabIndex = 1;
-            this.lblSaldo.Text = "100$";
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.LightGreen;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 187);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ingresos";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(355, 187);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 55);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Saldo total";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(355, 187);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 55);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Saldo total";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(235, 110);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 19);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "100$";
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Red;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(355, 187);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(178, 55);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Gastos";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(235, 110);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 19);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "100$";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(110, 251);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 19);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "100$";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(235, 110);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 19);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "100$";
+            
             // 
             // label9
             // 
@@ -293,6 +185,88 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "100$";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(110, 251);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 19);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "100$";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Red;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(355, 187);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(178, 55);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Gastos";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSaldo
+            // 
+            this.lblSaldo.AutoSize = true;
+            this.lblSaldo.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldo.Location = new System.Drawing.Point(405, 75);
+            this.lblSaldo.Name = "lblSaldo";
+            this.lblSaldo.Size = new System.Drawing.Size(45, 19);
+            this.lblSaldo.TabIndex = 1;
+            this.lblSaldo.Text = "100$";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(355, 187);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(178, 55);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Saldo total";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(355, 187);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(178, 55);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Saldo total";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.LightGreen;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(42, 187);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(178, 55);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ingresos";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSaldoTotal
+            // 
+            this.lblSaldoTotal.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldoTotal.Location = new System.Drawing.Point(172, 39);
+            this.lblSaldoTotal.Name = "lblSaldoTotal";
+            this.lblSaldoTotal.Size = new System.Drawing.Size(178, 55);
+            this.lblSaldoTotal.TabIndex = 0;
+            this.lblSaldoTotal.Text = "Saldo total";
+            this.lblSaldoTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtSaldoTotal
+            // 
+            this.txtSaldoTotal.Location = new System.Drawing.Point(212, 94);
+            this.txtSaldoTotal.Name = "txtSaldoTotal";
+            this.txtSaldoTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtSaldoTotal.TabIndex = 2;
+            // 
             // Default
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,6 +278,7 @@
             this.Name = "Default";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finanzas personales";
+            this.Load += new System.EventHandler(this.Default_Load);
             this.panelMenuLateral.ResumeLayout(false);
             this.panelApp.ResumeLayout(false);
             this.panelApp.PerformLayout();
@@ -322,16 +297,14 @@
         private System.Windows.Forms.Button btnInformes;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblSaldo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblSaldoTotal;
+        private System.Windows.Forms.TextBox txtSaldoTotal;
     }
 }
 

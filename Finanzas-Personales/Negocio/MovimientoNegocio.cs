@@ -34,5 +34,21 @@ namespace Negocio
 			finally { datos.cerrarConexion(); }
         }
 
+        public decimal saldoTotal()
+        {
+			AccesoDatos datos = new AccesoDatos();
+			decimal saldo=1;
+			try
+			{
+
+				return saldo;
+			}
+			catch (Exception ex)
+			{
+
+				throw ex;
+			}
+        }
+
     }
 }
