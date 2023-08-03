@@ -35,8 +35,9 @@
             this.btnAgregarMovimento = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelApp = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.txtSaldoTotal = new System.Windows.Forms.TextBox();
+            this.lblIngresos = new System.Windows.Forms.Label();
+            this.lblGastos = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblSaldo = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSaldoTotal = new System.Windows.Forms.Label();
-            this.txtSaldoTotal = new System.Windows.Forms.TextBox();
             this.panelMenuLateral.SuspendLayout();
             this.panelApp.SuspendLayout();
             this.SuspendLayout();
@@ -148,8 +148,8 @@
             // 
             this.panelApp.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelApp.Controls.Add(this.txtSaldoTotal);
-            this.panelApp.Controls.Add(this.label9);
-            this.panelApp.Controls.Add(this.label10);
+            this.panelApp.Controls.Add(this.lblIngresos);
+            this.panelApp.Controls.Add(this.lblGastos);
             this.panelApp.Controls.Add(this.label7);
             this.panelApp.Controls.Add(this.label5);
             this.panelApp.Controls.Add(this.lblSaldo);
@@ -163,27 +163,33 @@
             this.panelApp.Name = "panelApp";
             this.panelApp.Size = new System.Drawing.Size(600, 450);
             this.panelApp.TabIndex = 1;
-            
             // 
-            // label9
+            // txtSaldoTotal
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(110, 251);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 19);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "100$";
+            this.txtSaldoTotal.Location = new System.Drawing.Point(212, 94);
+            this.txtSaldoTotal.Name = "txtSaldoTotal";
+            this.txtSaldoTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtSaldoTotal.TabIndex = 2;
             // 
-            // label10
+            // lblIngresos
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(436, 242);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(45, 19);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "100$";
+            this.lblIngresos.AutoSize = true;
+            this.lblIngresos.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngresos.Location = new System.Drawing.Point(110, 251);
+            this.lblIngresos.Name = "lblIngresos";
+            this.lblIngresos.Size = new System.Drawing.Size(45, 19);
+            this.lblIngresos.TabIndex = 1;
+            this.lblIngresos.Text = "100$";
+            // 
+            // lblGastos
+            // 
+            this.lblGastos.AutoSize = true;
+            this.lblGastos.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGastos.Location = new System.Drawing.Point(436, 242);
+            this.lblGastos.Name = "lblGastos";
+            this.lblGastos.Size = new System.Drawing.Size(45, 19);
+            this.lblGastos.TabIndex = 1;
+            this.lblGastos.Text = "100$";
             // 
             // label7
             // 
@@ -260,13 +266,6 @@
             this.lblSaldoTotal.Text = "Saldo total";
             this.lblSaldoTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtSaldoTotal
-            // 
-            this.txtSaldoTotal.Location = new System.Drawing.Point(212, 94);
-            this.txtSaldoTotal.Name = "txtSaldoTotal";
-            this.txtSaldoTotal.Size = new System.Drawing.Size(100, 20);
-            this.txtSaldoTotal.TabIndex = 2;
-            // 
             // Default
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,8 +294,8 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnCategorias;
         private System.Windows.Forms.Button btnInformes;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblIngresos;
+        private System.Windows.Forms.Label lblGastos;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblSaldo;

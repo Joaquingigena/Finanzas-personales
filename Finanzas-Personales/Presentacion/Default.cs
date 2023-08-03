@@ -29,7 +29,9 @@ namespace Presentacion
         {
             MovimientoNegocio negocio= new MovimientoNegocio();
 
-            txtSaldoTotal.Text = negocio.saldoTotal().ToString();
+            txtSaldoTotal.Text = negocio.saldoTotal().ToString() + "$";
+            lblGastos.Text= negocio.totalGastos().ToString() + "$";
+            lblIngresos.Text = negocio.totalIngresos().ToString() + "$";
 
         }
     }

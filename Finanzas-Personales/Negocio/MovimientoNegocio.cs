@@ -53,5 +53,47 @@ namespace Negocio
 			}
         }
 
+		public decimal totalIngresos()
+		{
+			AccesoDatos datos= new AccesoDatos();
+			decimal ingresos;
+
+			try
+			{
+				datos.setearConsulta("select isnull(SUM(Monto),0)  from Movimiento where Tipo=1");
+
+				ingresos = datos.ejecutarAccionScalar();
+
+				return ingresos;
+
+			}
+			catch (Exception ex)
+			{
+
+				throw ex;
+			}
+		}
+
+        public decimal totalGastos()
+        {
+            AccesoDatos datos = new AccesoDatos();
+            decimal gastos;
+
+            try
+            {
+                datos.setearConsulta("select isnull(SUM(Monto),0)  from Movimiento where Tipo=2");
+
+                gastos = datos.ejecutarAccionScalar();
+
+                return gastos;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
     }
 }
